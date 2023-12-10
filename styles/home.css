@@ -1,0 +1,168 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    float: left;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-left: 20px;
+}
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    margin-right: 10px;
+}
+.navbar .opciones a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(86, 86, 86);
+    pointer-events: visible
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    left: auto;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.banner {
+    position: relative;
+    box-sizing: border-box;
+    height: 400px; 
+    background-color: #363e5e;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content {
+    position: absolute;
+    background-color: #1f1f1f91;
+    padding: 40px;
+}
+.banner-content h2, .banner-content p {
+    text-align: center;
+}
+.banner-content h2 {
+    display: block;
+    font-size: 2.5rem;
+    color: #f2f2f2;
+    margin-bottom: 40px;
+}
+.banner-content p {
+    font-size: 1.5rem;
+    color: #dedede;
+}
+.fondo1 {
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+}
+.fondo1 img {
+    max-width: 100%;
+}
+.campamentos {
+    margin: 4%;
+}
+.campamentos h2 {
+    font-size: 1.75rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.cards {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    gap: 30px;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover {
+    box-shadow: 8px 12px 4px rgba(0,0,0,0.4);
+}
+.container {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    color: #f2f2f2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1f1f1fb8;
+}
+.container h4 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+.container p {
+    line-height: 1.75;
+}
+.fondo2 {
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+}
+.fondo2 img {
+    max-width: 100%;
+}

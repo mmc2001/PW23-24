@@ -1,0 +1,182 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    float: left;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-left: 20px;
+}
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    margin-right: 10px;
+}
+.navbar .opciones a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(86, 86, 86);
+    pointer-events: visible
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    left: auto;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.contenedorInscripcion {
+    margin: 4%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.contenedorInscripcion h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+.contenidoInscripcion h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+#keywords {
+    margin: 0 auto;
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+#keywords thead {
+    background: #ebebeb;
+}
+#keywords thead tr th {
+    font-weight: bold;
+    padding: 12px 30px;
+    padding-left: 42px;
+}
+#keywords thead tr th span {
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+#keywords thead tr th.headerSortUp,
+#keywords thead tr th.headerSortDown {
+    background: #dedede;
+}
+#keywords tbody tr {
+    color: #555;
+}
+#keywords tbody tr td {
+    text-align: center;
+    padding: 15px 10px;
+}
+#keywords tbody tr td.lalign {
+    text-align: left;
+    cursor: pointer;
+}
+#keywords tbody tr td.lalign:hover {
+    color: #1f1f1f;
+}
+.buttonSolicitar {
+    padding: 10px 16px;
+    font-size: 0.75rem;
+    border: 2px #242424 solid;
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.buttonSolicitar:hover {
+    background-color: #242424;
+    color: #ffffff;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.buttonConfirmar {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border: 2px #37c94a solid;
+    border-radius: 5px;
+    background: #ffffff00;
+    cursor: pointer;
+}
+.buttonCancelar {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border: 2px #c92f2f solid;
+    border-radius: 5px;
+    background: #ffffff00;
+    cursor: pointer;
+}
